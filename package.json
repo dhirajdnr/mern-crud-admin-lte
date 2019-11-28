@@ -1,0 +1,23 @@
+{
+  "name": "hotelbookingmern",
+  "version": "1.0.0",
+  "description": "Developed by dheerajdnr@gmail.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhirajdnr"
+  },
+  "author": "dheerajdnr@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1"
+  }
+}
